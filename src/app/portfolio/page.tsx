@@ -1,5 +1,9 @@
-import Image from "next/image";
+import PortfolioModule from "@/modules/portfolio";
 
 export default function Portfolio() {
-  return <main className="">Portfolio</main>;
+  return (
+    <main className="">
+      <PortfolioModule />
+    </main>
+  );
 }

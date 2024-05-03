@@ -1,16 +1,9 @@
-import Image from "next/image";
+import HomeModule from "@/modules/home";
 
 export default function Home() {
   return (
     <main className="">
-      landing
-      <Image
-        src="/lazydev/vercel.svg"
-        alt="Vercel Logo"
-        width={100}
-        height={24}
-        priority
-      />
+      <HomeModule />
     </main>
   );
 }
