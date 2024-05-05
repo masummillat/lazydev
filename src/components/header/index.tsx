@@ -3,7 +3,7 @@ import {
   ABOUT_PATH,
   CONTACT_PATH,
   HOME_PATH,
-  PORTFOLIO_PATH,
+  PROJECTS_PATH,
 } from "@/constants/routes";
 import Link from "next/link";
 
@@ -27,10 +27,10 @@ const Header: React.FC = () => {
           About
         </Link>
         <Link
-          href={PORTFOLIO_PATH}
+          href={PROJECTS_PATH}
           className="text-white text-sm text-whtie rounded-3xl p-2 px-3"
         >
-          Portfolio
+          Projects
         </Link>
         <Link
           href={CONTACT_PATH}
