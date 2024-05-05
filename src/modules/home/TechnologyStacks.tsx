@@ -1,5 +1,5 @@
 import Tag from "@/components/Tag";
-import { technologies } from "@/constants/technologies";
+import { technologies } from "@/constants";
 import React from "react";
 const TechnologyStacks: React.FC = () => {
   return (

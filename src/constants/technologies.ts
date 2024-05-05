@@ -1,1 +1,0 @@
-export const technologies = ['Github', 'Bigbucket', "JavaScript", "React","NodeJs", "NextJs", "MySql", "MongoDb"]
