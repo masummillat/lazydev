@@ -1,3 +1,9 @@
+import AboutModule from "@/modules/about";
+
 export default function About() {
-  return <main className="">About</main>;
+  return (
+    <main className="">
+      <AboutModule />
+    </main>
+  );
 }
