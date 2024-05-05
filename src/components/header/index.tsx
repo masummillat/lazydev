@@ -1,16 +1,20 @@
+"use client";
 import {
   ABOUT_PATH,
   CONTACT_PATH,
   HOME_PATH,
-  PORTFOLIO_PATH,
+  PROJECTS_PATH,
 } from "@/constants/routes";
 import Link from "next/link";
+
 import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <div className="bg-[#282828] p-4 grid grid-cols-1 sm:grid-cols-2">
-      <div className="text-white">LazyDev</div>
+    <div className="bg-black p-4 grid grid-cols-1 sm:grid-cols-2">
+      <Link href="/" className="text-white">
+        LazyDev
+      </Link>
       <div className="flex justify-end gap-4">
         <Link
           href={HOME_PATH}
@@ -25,10 +29,10 @@ const Header: React.FC = () => {
           About
         </Link>
         <Link
-          href={PORTFOLIO_PATH}
+          href={PROJECTS_PATH}
           className="text-white text-sm text-whtie rounded-3xl p-2 px-3"
         >
-          Portfolio
+          Projects
         </Link>
         <Link
           href={CONTACT_PATH}
