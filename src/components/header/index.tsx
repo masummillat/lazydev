@@ -12,7 +12,9 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <div className="bg-black p-4 grid grid-cols-1 sm:grid-cols-2">
-      <div className="text-white">LazyDev</div>
+      <Link href="/" className="text-white">
+        LazyDev
+      </Link>
       <div className="flex justify-end gap-4">
         <Link
           href={HOME_PATH}
