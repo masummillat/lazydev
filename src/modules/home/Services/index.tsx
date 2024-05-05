@@ -1,3 +1,4 @@
+import { services } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -11,7 +12,7 @@ const Services: React.FC = () => {
         </h6>
 
         <div className="relative w-[60%] mx-auto">
-          <div className="absolute left-[-65px] top-[25%] -z-10 grid grid-cols-8 gap-2">
+          <div className="absolute left-[-65px] top-[28%] -z-10 grid grid-cols-8 gap-1 rounded-full overflow-hidden">
             {Array.from(Array(64).keys()).map((a) => {
               return (
                 <div
@@ -37,6 +38,21 @@ const Services: React.FC = () => {
           <div className="right-[-60px] top-[25%] w-36 h-36 rounded-lg bg-black text-white flex justify-center items-center absolute">
             Efficiency
           </div>
+        </div>
+
+        <h4>Our Services</h4>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {services?.map((service: string, ind) => (
+            <div
+              className="grid items-center gap-4"
+              style={{ gridTemplateColumns: "auto 1fr auto " }}
+              key={service}
+            >
+              <div>{ind + 1}</div>
+              <div className="border-b-2 border-black" />
+              <div>{service}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
